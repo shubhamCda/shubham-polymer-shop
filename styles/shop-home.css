@@ -70,6 +70,14 @@ shop-tab{
   margin: 0 10px;
 }
 
+shop-tab:active{
+  background-color: rgba(73, 69, 69, 0.514);
+  box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
+  color: black;
+  transition: opacity 0.8;
+}
+
 shop-tab a{
   text-decoration: none;
   color: rgb(44, 44, 44);
