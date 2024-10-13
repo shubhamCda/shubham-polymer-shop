@@ -1,0 +1,95 @@
+shop-tab .active{
+  border-bottom: 2px solid black;
+} 
+
+.outerwear-heading{
+  text-align: center;
+  
+}
+
+.outerwear-heading h1{
+  margin: 30px 0 4px 0;
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgb(54, 54, 54);
+}
+
+.outerwear-heading span{
+  color: rgb(92, 92, 92);
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 390px 390px 390px 390px 390px 390px;
+  grid-template-areas: 
+    "item-1 item-1 item-1"
+    "item-1 item-1 item-1"
+    "item-1 item-1 item-1"
+    "item-1 item-1 item-1"
+    "item-1 item-1 item-1"
+    "item-1 item-1 item-1";
+  row-gap: 10px;
+  
+}
+
+.item-1{
+  text-align: center;
+  margin: 0 48px;
+  padding: 5px;
+  
+}
+
+.item-info img{
+  margin: 32px 0 6px;
+}
+
+@media (max-width: 810px) {
+
+  .container{
+    
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+  }
+  .item-1{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .item-info img{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    opacity: 0.9;
+    transition: 0.5s opacity;
+  }
+}
+
+@media (max-width: 767px) {
+  .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 320px 320px 320px 320px 320px 320px 320px 320px;
+    grid-template-areas: 
+      "item-1 item-1"
+      "item-1 item-1"
+      "item-1 item-1"
+      "item-1 item-1"
+      "item-1 item-1"
+      "item-1 item-1"
+      "item-1 item-1"
+      "item-1 item-1";
+  }
+
+  shop-image{
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .container{
+    grid-template-rows: 215px 215px 215px 215px 215px 215px 215px 215px;
+  }
+}
