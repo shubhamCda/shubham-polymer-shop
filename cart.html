@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - SHOP</title>
+  <link rel="stylesheet" href="./styles/cart.css">
+  <link rel="stylesheet" href="./styles/shop-home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="left-section">
+      <a class="hamberger-menu" href="">
+        <img src="images/icons/hamburger-menu.svg" alt="" srcset="">
+      </a>
+    </div>
+    <div class="middle-section">
+      <div class="logo">
+        <a href="/">SHOP</a>
+      </div>
+
+    </div>
+    <div class="right-section">
+      <div class="cart">
+        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+      </div>
+    </div>
+
+  </nav>
+  <div class="main-content">
+    <div class="cart-section">
+      <div class="header">
+        <h1>Your Cart</h1>
+        <span>(1 item)</span>
+      </div>
+      <div class="item-list">
+        <div class="first-item">
+          <div class="item-image">
+            <img src="./images/mens-outerwear/item-1.jpg" alt="no image found">
+          </div>
+          <div class="item-details">
+            <div class="item-name-button">
+              <p class="item-name">Men's Tech Shell Full-Zip</p>
+              
+            </div>
+            <div class="item-properties">
+              <div class="qty">Qty :
+                <select name="quantity" id="quantities">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+
+                </select>
+              </div>
+              <p class="size">Size : M</p>
+              <p class="amount">$50.20</p>
+              <img src="./images/icons/cancel.png" alt="no image found" id="cancel-image">
+            </div>
+          </div>
+        </div>
+
+        <div class="total">
+          <p class="total-text">Total :</p>
+          <p class="total-amount">$50.20</p>
+          <shop-button>
+            <div>
+              <a href="./checkout.html">CHECKOUT</a>
+            </div>
+          </shop-button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <a href="./checkout.html">
+    <button class="checkout-button">CHECKOUT</button>
+  </a>
+  </div>
+  </div>
+</body>
+
+</html>
