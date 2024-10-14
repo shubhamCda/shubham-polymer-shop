@@ -1,0 +1,314 @@
+.hidden-container {
+    display: flex;
+    justify-content: center;
+    color: rgb(32, 32, 32);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.hidden-mens-outerwear,
+.hidden-ladies-outerwear,
+.hidden-mens-tshirt,
+.hidden-ladies-tshirt {
+    margin: 20px 20px 30px 10px;
+}
+
+.single-item-main-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.single-item-sub-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    justify-content: center;
+}
+
+
+.single-img-container {
+    max-width: 50%;
+    margin: 10px;
+}
+
+.single-img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.single-item-details {
+    max-width: 50%;
+}
+
+.single-item-details {
+    width: 50%;
+    margin-top: 32px 24px 32px 24px;
+}
+
+.single-item-title {
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.single-item-price {
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    margin-bottom: 32px;
+}
+
+.selections {
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+
+}
+
+.size-picker {
+    display: block;
+    font-size: 13px;
+    line-height: 19.5px;
+    position: relative;
+}
+
+.single-item-quantity-label,
+.single-item-size-label {
+    display: block;
+    position: absolute;
+    line-height: 16px;
+    top: 18.5px;
+}
+
+.quantity,
+.size-check {
+    box-sizing: border-box;
+    display: inline-block;
+    color: rgb(32, 32, 32);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 16px 24px 16px 70px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.quantity-picker {
+    border-top: 1px solid #ccc;
+    display: block;
+    font-size: 13px;
+    line-height: 19.5px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.item-description-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.item-description {
+    margin-top: 20px;
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.feature-title {
+    margin-top: 20px;
+    color: rgb(117, 117, 117);
+    font-size: 13.5px;
+}
+
+.feature-list {
+    margin-top: 20px;
+    color: rgb(117, 117, 117);
+    font-size: 13.5px;
+}
+
+.feature-list li {
+    margin-top: 5px;
+}
+
+.add-cart-class {
+    margin-top: 52px;
+}
+
+.add-cart {
+    text-decoration: none;
+    border: 2px solid black;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.3px;
+    padding: 10px;
+    color: rgb(32, 32, 32);
+}
+
+.check-btn {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+
+    .hidden-container {
+        display: none;
+    }
+
+    .single-item-main-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .single-item-sub-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .single-img-container {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .single-img {
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .single-item-details {
+        max-width: 100%;
+        margin-top: 32px 24px 32px 24px;
+    }
+
+    .single-item-details {
+        width: 80%;
+        margin: 32px 24px 32px 24px;
+    }
+
+    .single-item-title {
+        color: rgb(32, 32, 32);
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .single-item-price {
+        color: rgb(117, 117, 117);
+        font-size: 13px;
+        margin-bottom: 32px;
+    }
+
+    .selections {
+        color: rgb(117, 117, 117);
+        font-size: 13px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        border-top: 1px solid #ccc;
+
+    }
+
+    .size-picker {
+        display: block;
+        font-size: 13px;
+        line-height: 19.5px;
+        position: relative;
+    }
+
+    .single-item-quantity-label,
+    .single-item-size-label {
+        display: block;
+        position: absolute;
+        line-height: 16px;
+        top: 18.5px;
+    }
+
+    .quantity,
+    .size-check {
+        box-sizing: border-box;
+        display: inline-block;
+        color: rgb(32, 32, 32);
+        font-size: 16px;
+        font-weight: 300;
+        padding: 16px 24px 16px 70px;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+    }
+
+    .quantity-picker {
+        border-top: 1px solid #ccc;
+        display: block;
+        font-size: 13px;
+        line-height: 19.5px;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+    .item-description-title {
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    .item-description {
+        margin-top: 20px;
+        color: rgb(117, 117, 117);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.2rem;
+        letter-spacing: 0.5px;
+    }
+
+    .feature-title {
+        margin-top: 20px;
+        color: rgb(117, 117, 117);
+        font-size: 13.5px;
+    }
+
+    .feature-list {
+        margin-top: 20px;
+        color: rgb(117, 117, 117);
+        font-size: 13.5px;
+    }
+
+    .feature-list li {
+        margin-top: 5px;
+    }
+
+    .add-cart-class {
+        display: none;
+    }
+    
+    .check-btn {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 64px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Ubuntu Sans;
+        background-color: rgb(23, 44, 80);
+    }
+
+}
