@@ -1,0 +1,313 @@
+.main-container {
+  height: 175vh;
+  width: 90%;
+  padding: 15px;
+}
+
+.checkout {
+  text-align: center;
+}
+
+.checkout-text {
+  margin-bottom: 10px;
+  color: black;
+  font-size: 15px;
+}
+
+.checkout-subtext {
+  color: rgb(134, 132, 132);
+  font-size: 13px
+}
+
+.main-container h2 {
+  margin-bottom: 15px;
+  color: black;
+  font-size: 13px;
+}
+
+.input-label {
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
+.informtion {
+  margin-left: 15px;
+  margin-right: 8px;
+}
+
+.input-label input {
+  border: 0;
+  border-bottom: 1px solid rgb(135, 134, 134);
+  outline: none;
+  padding: 8px;
+  width: 100%;
+}
+
+.input-label label {
+  position: absolute;
+  color: rgb(135, 134, 134);
+  left: 0;
+  font-size: 20px;
+}
+
+.input-label input:focus+label {
+  font-size: 15px;
+  top: -0.15px;
+  color: black;
+}
+
+.account-info {
+  margin-top: 15px;
+}
+
+.country {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-add {
+  margin-top: 15px;
+}
+
+.shipping-add input {
+  border: 0;
+  border-bottom: 0.5px solid rgb(130, 128, 128);
+  padding: 15px;
+}
+
+.state-pin {
+  display: flex;
+}
+
+#state {
+  width: 80%;
+}
+
+.state {
+  width: 50%;
+}
+
+.zip-code {
+  width: 50%;
+}
+
+#country {
+  margin-top: 15px;
+  width: 100%;
+  border: 0;
+  background-color: white;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.billing h2 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.payment-method h2 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+#card-holder {
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid rgb(130, 128, 128);
+  padding: 15px;
+}
+
+#card-no {
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid rgb(130, 128, 128);
+  padding: 15px;
+}
+
+.expiry-date {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 4rem;
+}
+
+.month {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.year {
+  display: flex;
+  width: 33%;
+}
+
+.cvv-num {
+  display: flex;
+  bottom: -0.96rem;
+  width: 33%;
+}
+
+#expiry[name="expiry-month"] {
+  width: 90%;
+  border: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(130, 128, 128);
+  padding: 8px;
+}
+
+#expiry[name="expiry-year"] {
+  width: 90%;
+  border: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(130, 128, 128);
+  padding: 8px;
+}
+
+#cvv {
+  width: 90%;
+  border: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(130, 128, 128);
+  padding: 8px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name,
+.item-price {
+  font-size: 0.8rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.eachitem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-sum h2 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.total-amount {
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.order-button {
+  display: none;
+}
+
+.order-place {
+  padding: 1.4rem;
+  width: 100%;
+  background-color: rgb(23, 44, 80);
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.order-place a {
+  color: white;
+  text-decoration: none;
+  margin-right: 4rem;
+}
+
+.demo-button {
+  display: none;
+}
+
+.billing label {
+  margin-left: 15px;
+}
+
+.billing input {
+  outline: 2px solid black;
+}
+
+@media (min-width:768px) {
+  .main-container {
+      margin: 80px auto 0 auto;
+      max-width: 950px;
+  }
+
+  .informtion {
+      display: flex;
+      margin: 3rem auto 0 auto;
+  }
+
+  .person-details {
+      width: 48%;
+  }
+
+  .menu {
+      visibility: hidden;
+  }
+
+  .payment-desc {
+      margin-left: 5rem;
+      width: 52%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .account-info {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .shipping-add {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .payment-method {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .payment-method h2 {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  .order-button {
+      margin-top: 25px;
+      display: block;
+      font-family: sans-serif;
+      width: 8rem;
+      font-size: 14px;
+      padding: 8px 15px;
+      text-align: center;
+      border: 2px solid black;
+  }
+
+  .order-button:active{
+      background-color: black;
+      color: #fff;
+  }
+
+  .order-btn{
+      text-decoration: none;
+      color: black;
+      font-size: 13.5px;
+      font-weight: 500;
+  }
+
+  .check-btn{
+      display: none;
+  }
+
+  
+}
