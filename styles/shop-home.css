@@ -186,6 +186,10 @@ h2 {
 
 }
 
+.ladies-t-shirt-name{
+  margin-top: -5px;
+}
+
 @media (min-width: 767px) {
   .hamberger-menu img {
     display: none;
