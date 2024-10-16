@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-nav {
+nav > header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -40,15 +40,28 @@ nav {
 }
 
 .left-section {
+  width: 35px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-.hamberger-menu img {
+.hamberger-menu svg{
+  text-decoration: none;
+  color: black;
   display: block;
   height: 24px;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+.arrow{
+  transform: rotate(0turn);
+  height: 25px;
+  width: 25px;
+  text-decoration: none;
+  color: black;
+  /* padding: 20px; */
 }
 
 .middle-section {
@@ -191,7 +204,7 @@ h2 {
 }
 
 @media (min-width: 767px) {
-  .hamberger-menu img {
+  .hamberger-menu svg {
     display: none;
   }
 

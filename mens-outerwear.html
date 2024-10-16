@@ -12,34 +12,36 @@
 
 <body>
   <nav>
-    <div class="left-section">
-      <a class="hamberger-menu" href="">
-        <img src="images/icons/hamburger-menu.svg" alt="" srcset="">
-      </a>
-    </div>
-    <div class="middle-section">
-      <div class="logo">
-        <a href="/">SHOP</a>
-      </div>
+    <header>
+        <div class="left-section">
+            <a class="hamberger-menu" href="">
+                <!-- <img src="images/icons/hamburger-menu.svg" alt="" srcset=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </a>
+        </div>
+        <div class="middle-section">
+            <div class="logo">
+                <a href="/">SHOP</a>
+            </div>
 
+        </div>
+        <div class="right-section">
+            <div class="cart">
+                <a href="./cart.html"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="category-section">
+        <shop-tab><a class="active" href="./mens-outerwear.html">Men's Outerwear</a></shop-tab>
+        <shop-tab><a href="./ladies-outerwear.html">Ladies Outerwear</a></shop-tab>
+        <shop-tab><a href="./mens- t-shirts.html">Men's T-Shirts</a></shop-tab>
+        <shop-tab><a href="./ladies-t-shirts.html">Ladies T-Shirts</a></shop-tab>
     </div>
-    <div class="right-section">
-      <div class="cart">
-        <a href="./cart.html"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a>
-      </div>
-    </div>
-
-  </nav>
-
-  <div class="category-section">
-    <shop-tab>
-      <a href="./mens-outerwear.html">Men's Outerwear</a>
-      <div class="active"></div>
-    </shop-tab>
-    <shop-tab><a href="./ladies-outerwear.html">Ladies Outerwear</a></shop-tab>
-    <shop-tab><a href="./mens-t-shirts.html">Men's T-Shirts</a></shop-tab>
-    <shop-tab><a href="./ladies-t-shirts.html">Ladies T-Shirts</a></shop-tab>
-  </div>
+</nav>
   <div class="people-outwear">
     <shop-image>
       <img src="/images/category-img/mens_outerwear.jpg" alt="" srcset="">
