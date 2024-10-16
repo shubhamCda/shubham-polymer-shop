@@ -67,6 +67,11 @@ nav {
   justify-content: space-around;
 }
 
+.cart a{
+  text-decoration: none;
+  color: black;
+}
+
 shop-tab {
   margin: 0 10px;
 }
