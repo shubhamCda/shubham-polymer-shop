@@ -55,8 +55,8 @@ nav {
   display: flex;
   align-items: center;
   max-width: 500px;
-  margin-right: 35px;
-  margin-right: 0;
+  margin-left: 0;
+  
   flex-shrink: 1;
 }
 
@@ -184,6 +184,10 @@ h2 {
 @media (min-width: 767px) {
   .hamberger-menu img {
     display: none;
+  }
+
+  .middle-section{
+    margin-left: 60px;
   }
 
   /* .category-section {} */
