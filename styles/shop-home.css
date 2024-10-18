@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-nav > header {
+nav>header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -46,7 +46,7 @@ nav > header {
   justify-content: space-around;
 }
 
-.hamberger-menu svg{
+.hamberger-menu svg {
   text-decoration: none;
   color: black;
   display: block;
@@ -55,7 +55,7 @@ nav > header {
   margin-right: 24px;
 }
 
-.arrow{
+.arrow {
   transform: rotate(0turn);
   height: 25px;
   width: 25px;
@@ -68,8 +68,8 @@ nav > header {
   display: flex;
   align-items: center;
   max-width: 500px;
-  margin-left: 0;
-  
+  margin-left: 45px;
+  justify-content: center;
   flex-shrink: 1;
 }
 
@@ -80,16 +80,16 @@ nav > header {
   justify-content: space-around;
 }
 
-.cart a{
+.cart a {
   text-decoration: none;
   color: black;
 }
 
-shop-tab {
+.shop-category {
   margin: 0 10px;
 }
 
-shop-tab:active {
+.shop-category:active {
   background-color: rgba(73, 69, 69, 0.514);
   box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.2);
   opacity: 0.5;
@@ -97,7 +97,7 @@ shop-tab:active {
   transition: opacity 0.8;
 }
 
-shop-tab a {
+.shop-category a {
   text-decoration: none;
   color: rgb(44, 44, 44);
   display: inline-block;
@@ -115,8 +115,41 @@ shop-tab a {
   /* display: none; */
 }
 
-.container {
+.category-container {
   margin-bottom: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:"item-1 item-1";  
+  
+
+}
+
+.page-category-image {
+  display: none;
+}
+
+.item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.item-info img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  opacity: 0.9;
+  transition: 0.5s opacity;
 }
 
 .people-outwear {
@@ -126,23 +159,24 @@ shop-tab a {
   align-items: center;
 }
 
-shop-image {
+.category-image {
   position: relative;
   height: 320px;
   overflow: hidden;
   cursor: pointer;
 }
 
-shop-image img {
+.category-image img {
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-shop-button {
+.shop-button {
   display: inline-block;
 }
 
-shop-button a {
+.shop-button a{
+  text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
   border: 2px solid black;
@@ -157,7 +191,7 @@ shop-button a {
   outline: none;
 }
 
-shop-button a:hover {
+.shop-button a:hover {
   color: #fff;
   background-color: black;
   opacity: 0.5;
@@ -199,18 +233,116 @@ h2 {
 
 }
 
-.ladies-t-shirt-name{
+.ladies-t-shirt-name {
   margin-top: -5px;
 }
+
+.shop-category {
+  display: none;
+}
+
+.title {
+  color: rgb(36, 36, 36);
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.price {
+  color: #5e5d5d;
+}
+
+.outerwear-heading {
+  text-align: center;
+
+}
+
+.outerwear-heading h1 {
+  margin: 30px 0 4px 0;
+  font-size: 1.3em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgb(54, 54, 54);
+}
+
+.outerwear-heading span {
+  color: rgb(92, 92, 92);
+}
+
+footer{
+  margin-top: 4.37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-button{
+  font-family: 'Roboto Flex', sans-serif;
+  margin-top: 0.812rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.87rem;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+}
+
+
+.footer-content a{
+  font-family: 'Roboto Flex', sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(136, 133, 133);
+  font-size: 0.87rem;
+}
+
 
 @media (min-width: 767px) {
   .hamberger-menu svg {
     display: none;
   }
 
-  .middle-section{
-    margin-left: 60px;
+  .middle-section {
+    margin-left: 45px;
   }
 
-  /* .category-section {} */
+  .shop-category {
+    display: block;
+  }
+
+  .page-category-image {
+    display: block;
+  }
+
+  .shop-category .active {
+    border-bottom: 2px solid black;
+  }
+
+  .outerwear-heading {
+    text-align: center;
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "item-1 item-1 item-1";
+      
+    row-gap: 10px;
+
+  }
+
+  .item-1 {
+    align-items: center;
+    margin: 0 48px;
+    padding: 5px;
+
+  }
+
+  .item-info img {
+    margin: 32px 0 6px;
+  }
+ 
+
 }

@@ -1,5 +1,5 @@
 .main-container {
-  height: 175vh;
+  height: 125vh;
   width: 90%;
   padding: 15px;
 }
@@ -208,6 +208,11 @@
 .order-button {
   display: none;
 }
+.shop-cart-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .order-place {
   padding: 1.4rem;
@@ -215,17 +220,12 @@
   background-color: rgb(23, 44, 80);
   position: fixed;
   bottom: 0;
-  text-align: center;
 }
 
 .order-place a {
   color: white;
   text-decoration: none;
-  margin-right: 4rem;
-}
-
-.demo-button {
-  display: none;
+  text-align: center;
 }
 
 .billing label {
@@ -236,7 +236,7 @@
   outline: 2px solid black;
 }
 
-@media (min-width:768px) {
+@media (min-width:767px) {
   .main-container {
       margin: 80px auto 0 auto;
       max-width: 950px;
@@ -265,6 +265,7 @@
   .account-info {
       display: flex;
       flex-direction: column;
+      margin-top: -10px;
   }
 
   .shipping-add {
@@ -284,8 +285,7 @@
 
   .order-button {
       margin-top: 25px;
-      display: block;
-      font-family: sans-serif;
+      display: block;      
       width: 8rem;
       font-size: 14px;
       padding: 8px 15px;
@@ -305,9 +305,8 @@
       font-weight: 500;
   }
 
-  .check-btn{
-      display: none;
+  .order-place{
+    display: none;
   }
-
   
 }
